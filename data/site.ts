@@ -35,7 +35,8 @@ export const site: SiteConfig = {
     {
       id: "hero",
       image: "/images/01.jpg",
-      imageAlt: "Cypress lined road across the Tuscan hills at sunrise",
+      imageAlt:
+        "Pool on a wooden deck overlooking the Valdichiana hills, two spritz on the edge",
       eyebrow: "Welcome to",
       title: "Happy Tuscany",
       subtitle: "A different way to experience Tuscany",
@@ -45,7 +46,7 @@ export const site: SiteConfig = {
     {
       id: "land",
       image: "/images/02.jpg",
-      imageAlt: "Olive groves and vineyards in the Valdichiana valley",
+      imageAlt: "Open kitchen with a solid wood island and stools",
       eyebrow: "The Land",
       title: "Valdichiana",
       subtitle: "Slow Tuscany",
@@ -54,7 +55,8 @@ export const site: SiteConfig = {
     {
       id: "experience",
       image: "/images/03.jpg",
-      imageAlt: "Table set for dinner in a Tuscan courtyard at dusk",
+      imageAlt:
+        "Guests in the outdoor hot tub with wine and a cheese board at sunset",
       eyebrow: "The Experience",
       title: "Live Tuscany",
       subtitle: "Not just a holiday",
