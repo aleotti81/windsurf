@@ -39,6 +39,26 @@ body {
   overflow: hidden;
 }
 
+.layers::before,
+.layers::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  z-index: 30;
+  height: 22vh;
+  pointer-events: none;
+}
+
+.layers::before {
+  top: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), transparent);
+}
+
+.layers::after {
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+
 .layer {
   position: absolute;
   inset: 0;
@@ -175,6 +195,7 @@ body {
 .progress__label {
   display: block;
   margin-bottom: 0.75rem;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
   font-size: 0.625rem;
   letter-spacing: 0.24em;
   text-transform: uppercase;
@@ -215,6 +236,11 @@ body {
    ------------------------------------------------- */
 .experience[data-motion="reduced"] .stage {
   height: auto;
+}
+
+.experience[data-motion="reduced"] .layers::before,
+.experience[data-motion="reduced"] .layers::after {
+  display: none;
 }
 
 .experience[data-motion="reduced"] .layers {
