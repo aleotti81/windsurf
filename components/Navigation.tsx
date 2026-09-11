@@ -12,21 +12,21 @@ interface NavigationProps {
 
 export function Navigation({ brand, links = [] }: NavigationProps) {
   return (
-    <header className="fixed inset-x-0 top-0 z-50 flex items-center justify-between gap-6 px-[var(--page-padding)] py-6 mix-blend-difference">
+    <header className="fixed inset-x-0 top-0 z-50 flex flex-wrap items-center justify-between gap-x-4 gap-y-2 px-[var(--page-padding)] py-5 mix-blend-difference sm:gap-6 sm:py-6">
       <Link
         href="/"
-        className="text-sm uppercase tracking-[0.3em] text-white transition-opacity hover:opacity-70"
+        className="text-[0.6875rem] uppercase tracking-[0.2em] text-white transition-opacity hover:opacity-70 sm:text-sm sm:tracking-[0.3em]"
       >
         {brand}
       </Link>
       {links.length > 0 ? (
         <nav aria-label="Main">
-          <ul className="flex items-center gap-6">
+          <ul className="flex flex-wrap items-center gap-x-4 gap-y-1 sm:gap-6">
             {links.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="text-xs uppercase tracking-[0.2em] text-white/70 transition-colors hover:text-white"
+                  className="text-[0.625rem] uppercase tracking-[0.12em] text-white/70 transition-colors hover:text-white sm:text-xs sm:tracking-[0.2em]"
                 >
                   {link.label}
                 </Link>
